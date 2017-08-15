@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.shape.Rectangle?>
+
+<HBox fx:id="cont" alignment="TOP_CENTER" minWidth="820" prefWidth="820" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+     <Label minHeight="20" minWidth="30" onMouseClicked="#updateCOINS">UPD</Label>
+   </children>
+   <children>
+      <!--<HBox alignment="CENTER" prefHeight="25.0" prefWidth="200.0" spacing="15.0">-->
+      <!--<children>-->
+      <!--<RadioButton fx:id="rb1" mnemonicParsing="false" text="EUR" />-->
+      <!--<RadioButton fx:id="rb2" mnemonicParsing="false" text="USD" />-->
+      <!--<RadioButton fx:id="rb3" mnemonicParsing="false" text="RUB" />-->
+      <!--<RadioButton fx:id="rb4" mnemonicParsing="false" text="GBP" />-->
+
+      <!--</children>-->
+      <!--</HBox>-->
+
+      <VBox alignment="CENTER" minWidth="400" prefWidth="400">
+         <children>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Bitcoin(BTC)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="btcu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="btcfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Litecoin(LTC)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ltcu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="ltcfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Aragon(ANT)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="antu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="antfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Basic Attention(BAT)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="batu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="batfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Bancor(BNT)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="bntu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="bntfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="BlackCoin(BLK)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="blku" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="blkfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="BitShares(BTS)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="btsu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="btsfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Civic(CVC)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="cvcu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="cvcfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Decred(DCR)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="dcru" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="dcrfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="DigixDAO(DGD)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="dgdu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="dgdfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Edgeless(EDG)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="edgu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="edgfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="EOS(EOS)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="eosu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="eosfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="OmiseGo(OMG)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="omgu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="omgfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="ReddCoin(RDD)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="rddu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="rddfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Siacoin(SC)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="scu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="scfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="StartCoin(START)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="startu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="startfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="VeriCoin(VRC)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="vrcu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="vrcfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Waves(WAVES)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="wavesu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="wavesfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Monero(XMR)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField prefWidth="110.0" promptText="Crypto" fx:id="xmru" />
+                  <TextField prefWidth="110.0" promptText="Fiat" fx:id="xmrfiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+
+         </children>
+      </VBox>
+
+      <VBox alignment="CENTER" minWidth="400" prefWidth="400">
+         <children>
+
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="FunFair(Fun)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="funu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="funfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="GameCredits(GAME)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="gamu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="gamfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Gnosis(GNO)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="gnou" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="gnofiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Golem(GNT)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="gntu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="gntfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="MatchPool(GUP)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="gupu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="gupfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Iconomi(ICN)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="icnu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="icnfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Komodo(KMD)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="kmdu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="kmdfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="LBRY Credits(LBC)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="lbcu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="lbcfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="MELON(MLN)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="mlnu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="mlnfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="MonaCoin(MONA)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="monu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="monfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="NameCoin(NMC)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nmcu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="nmcfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Numeraire(NMCR)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nmru" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="nmrfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="AUGUR(REP)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="repu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="repfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="IExec(RLC)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="rlcu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="rlcfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Status(SNT)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="sntu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="sntfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Voxels(VOX)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="voxu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="voxfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="VerCoin(VTC)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="vtcu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="vtcfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="Wings(WINGS)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="wingsu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="wingsfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="220.0" spacing="9.0">
+               <children>
+                  <Label prefWidth="135.0" text="ZCash(ZEC)">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="zecu" prefWidth="110.0" promptText="Crypto" />
+                  <TextField fx:id="zecfiat" prefWidth="110.0" promptText="Fiat" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+
+
+         </children></VBox>
+
+
+
+   </children>
+</HBox>
